@@ -1764,12 +1764,7 @@ const mojo = {
     e.router_.onMessageReceived_(n, []);
   }),
   (mojo.internal.interfaceSupport.createEndpoint = function (e, n = !1) {
-    return void 0 === e.watch
-      ? e
-      : new mojo.internal.interfaceSupport.Endpoint(
-          new mojo.internal.interfaceSupport.Router(e, n),
-          0,
-        );
+    return 0
   }),
   (mojo.internal.interfaceSupport.getEndpointForReceiver = function (e) {
     return mojo.internal.interfaceSupport.createEndpoint(e);
